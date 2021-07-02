@@ -1,0 +1,7 @@
+#!/bin/bash
+killall ferdi
+echo "Napping for $1 minutes"
+python -c "import os;import time;import progressbar
+for _ in progressbar.ProgressBar()(range(int($1) * 60)): time.sleep(1)
+" && sp play
+ferdi & disown

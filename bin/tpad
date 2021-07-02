@@ -1,0 +1,13 @@
+#!/bin/bash
+
+INPUTID=$(xinput list | grep ouchpad | sed -E  's/(.*)id=(.*)/\2/' | sed -E 's/(.*)\[(.*)/\1/')
+
+
+if  [ -f ".tpadlock" ]; then 
+	rm .tpadlock
+	xinput enable $INPUTID
+else
+	touch .tpadlock
+	xinput disable $INPUTID
+fi
+exit

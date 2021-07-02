@@ -1,0 +1,11 @@
+#!/bin/bash
+rm ~/Téléchargements/*.zip
+rm ~/Téléchargements/*.tar.gz
+rm ~/Téléchargements/*.tar.xz
+rm ~/Téléchargements/*.tgz
+rm ~/Téléchargements/*.torrent
+rm ~/Téléchargements/*.rar
+rm ~/Téléchargements/*.7z
+
+
+
