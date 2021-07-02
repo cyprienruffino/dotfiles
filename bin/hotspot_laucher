@@ -14,3 +14,5 @@ else
 		echo "	hotspot_launcher password"
 	fi
 fi
+
+echo "Don't forget to launch create_ap --fix-unmanaged if NetworkManager stops working !"
