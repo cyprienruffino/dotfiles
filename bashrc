@@ -1,7 +1,7 @@
 #
 # ~/.bashrc
 #
-alias ls='ls --color=auto'
+
 export PS1='[\u@\h \W]\$ '
 
 export PATH=$PATH:~/.local/bin/
@@ -35,6 +35,7 @@ ex ()
   fi
 }
 
+alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
