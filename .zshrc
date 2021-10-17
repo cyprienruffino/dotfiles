@@ -1,14 +1,32 @@
-#
-# ~/.bashrc
-#
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt extendedglob nomatch notify
+unsetopt autocd beep
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/cyprien/.zshrc'
 
-export PS1='[\u@\h \W]\$ '
+autoload -Uz compinit promptinit
+compinit
+promptinit
+
+# This will set the default prompt to the walters theme
+prompt redhat
+
+
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+bindkey "^[[3~"   delete-char
+bindkey "^[3;5~"  delete-char
+bindkey '^[[3;5~' kill-word
 
 export PATH=$PATH:~/.local/bin/
+export PATH=$PATH:/opt/pylon6/bin/
 export QT_QPA_PLATFORMTHEME=qt5ct
 export EDITOR=micro
-
-bind "set completion-ignore-case on"
 
 ex ()
 {
@@ -36,8 +54,6 @@ ex ()
 }
 
 alias ls='ls --color=auto'
-alias grep='grep --color=auto'
+alias grep='grep --color=auto'                
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
-
-alias rm='rm -i'
