@@ -22,6 +22,12 @@ bindkey "^[[1;5D" backward-word
 bindkey "^[[3~"   delete-char
 bindkey "^[3;5~"  delete-char
 bindkey '^[[3;5~' kill-word
+bindkey '\e[1~'   beginning-of-line  # Linux console
+bindkey '\e[H'    beginning-of-line  # xterm
+bindkey '\eOH'    beginning-of-line  # gnome-terminal
+bindkey '\e[4~'   end-of-line        # Linux console
+bindkey '\e[F'    end-of-line        # xterm
+bindkey '\eOF'    end-of-line        # gnome-terminal
 
 export PATH=$PATH:~/.local/bin/
 export PATH=$PATH:/opt/pylon6/bin/
