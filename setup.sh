@@ -7,15 +7,15 @@ mkdir ~/.config_backups
 cp ~/.zshrc ~/.config_backups/
 cp .zshrc ~/.zshrc
 
-mkdir ~/.local/bin
-cp -r bin ~/.local/bin/
+mkdir ~/.local/
+cp -r bin res ~/.local/
 
 sudo cp -r icons /usr/share/
 sudo cp -r themes /usr/share/
 
 cp wallpaper.jpg ~/.wallpaper.jpg
 
-sudo pacman -Syy --noconfirm  wget gnome-shell firefox cups gnome-tweak-tool code base-devel
+sudo pacman -Syy --noconfirm zsh wget gnome-shell firefox cups gnome-tweak-tool code base-devel
 
 wget https://aur.archlinux.org/cgit/aur.git/snapshot/yay.tar.gz
 tar xvf yay.tar.gz
