@@ -8,6 +8,6 @@ cd yay
 makepkg --noconfirm -si
 cd ..
 
-yay -Syy --noconfirm micro spotify jetbrains-toolbox lutris steam albert obsidian ferdi freetube
+yay -Syy --noconfirm micro spotify jetbrains-toolbox lutris albert obsidian ferdi freetube chrome-gnome-shell
 
-bash ./setup.sh
+sudo bash ./setup.sh
