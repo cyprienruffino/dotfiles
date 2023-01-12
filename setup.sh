@@ -4,6 +4,9 @@ mkdir ~/.config_backups
 cp ~/.zshrc ~/.config_backups/
 cp .zshrc ~/.zshrc
 
+cp ~/.gitconfig ~/.config_backups/
+cp .gitconfig ~/.gitconfig
+
 mkdir ~/.local/
 cp -r bin res ~/.local/
 

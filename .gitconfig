@@ -1,0 +1,10 @@
+[user]
+	name = Cyprien Ruffino
+	mail = ruffino.cyprien@protonmail.com
+	email = ruffino.cyprien@protonmail.com
+[credential]
+	helper = cache
+[protocol "file"]
+	allow = always
+[alias]
+	tree = log --oneline --decorate --graph
