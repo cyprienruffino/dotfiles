@@ -8,7 +8,7 @@ cp ~/.gitconfig ~/.config_backups/
 cp .gitconfig ~/.gitconfig
 
 mkdir -p ~/.local/
-cp -r bin res share ~/.local/
+cp -r bin res ~/.local/
 
 sudo cp -r icons /usr/share/
 sudo cp -r themes /usr/share/
