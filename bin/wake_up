@@ -1,2 +1,0 @@
-echo 'clementine -p' | at $1
-
