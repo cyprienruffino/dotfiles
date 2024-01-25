@@ -1,0 +1,35 @@
+{
+    "name": "Notion Search",
+    "description": "Search your Notion pages",
+    "developer_name": "Håkon Magne Holmen",
+    "icon": "images/icon.png",
+    "required_api_version": "^2.0.0",
+    "options": {
+      "query_debounce": 0.3
+    },
+    "preferences": [
+      {
+        "id": "notion_keyword",
+        "type": "keyword",
+        "name": "Notion search keyword",
+        "default_value": "nt"
+      },
+      {
+        "id": "notion_token",
+        "type": "input",
+        "name": "Notion token",
+        "description": "Multiple tokens are delimitered with ','. You can generate a token in https://www.notion.so/my-integrations, create an integration and follow the instructions to link the token with a page.",
+        "default_value": ""
+      },
+      {"id": "open_in",
+       "type": "select",
+       "name": "Open links in",
+       "description": "Choose whether to open pages in the Notion app or in the web browser",
+       "default_value": "App",
+       "options": [
+         {"value": "App", "text": "App"},
+         {"value": "Browser", "text": "Browser"}
+        ]
+       }
+    ]
+  }
