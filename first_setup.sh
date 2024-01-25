@@ -8,6 +8,6 @@ cd yay
 makepkg --noconfirm -si
 cd ..
 
-yay -Syy --noconfirm micro spotify jetbrains-toolbox lutris ulauncher obsidian ferdium freetube chrome-gnome-shell plank htop tilda
+yay -Syy --noconfirm micro spotify jetbrains-toolbox lutris ulauncher obsidian ferdium freetube chrome-gnome-shell plank htop tilda gnome-shell-extension-openweather-git gnome-shell-extension-dash-to-plank gnome-shell-extension-pixel-saver-git gnome-shell-extension-hidetopbar-git
 
 sudo bash ./setup.sh
