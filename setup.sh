@@ -18,6 +18,7 @@ cp wallpaper.jpg ~/.wallpaper.jpg
 gsettings set org.gnome.desktop.background draw-background false
 gsettings set org.gnome.desktop.background picture-uri file:///home/$USER/.wallpaper.jpg
 gsettings set org.gnome.desktop.background draw-background true
+gsettings set org.gnome.shell disable-extension-version-validation “true”
 
 sudo systemctl enable --now cups
 systemctl enable --user --now ulauncher
