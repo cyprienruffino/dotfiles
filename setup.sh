@@ -15,10 +15,8 @@ sudo cp -r themes /usr/share/
 
 cp wallpaper.jpg ~/.wallpaper.jpg
 
-gsettings set org.gnome.desktop.background draw-background false
-gsettings set org.gnome.desktop.background picture-uri file:///home/$USER/.wallpaper.jpg
-gsettings set org.gnome.desktop.background draw-background true
-gsettings set org.gnome.shell disable-extension-version-validation “true”
+kwriteconfig5 --file plasma-org.kde.plasma.desktop-appletsrc --group Containments --group 1 --group Wallpaper --group org.kde.image --group General --key Image "file:///home/$USER/.wallpaper.jpg"
+qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript 'var allDesktops = desktops();for (i=0;i<allDesktops.length;i++) {d = allDesktops[i];d.wallpaperPlugin = "org.kde.image";d.currentConfigGroup = Array("Wallpaper", "org.kde.image", "General");d.writeConfig("Image", "file:///home/'+ env['USER'] + '/.wallpaper.jpg");}'
 
 sudo systemctl enable --now cups
 systemctl enable --user --now ulauncher
