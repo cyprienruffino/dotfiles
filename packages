@@ -9,3 +9,5 @@ pacman-contrib
 bluez-utils
 plasma
 plasma-browser-integration
+qdbus6
+kconfig6
