@@ -1,5 +1,5 @@
 #!/bin/bash
-killall ferdi
+killall electron
 echo "Napping for $1 minutes"
-sleep $1m && mpv .local/res/alarm.mp4
-ferdi & disown
+sleep $1m && mpv ~/.local/res/alarm.mp4
+ferdium & disown
