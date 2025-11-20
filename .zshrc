@@ -32,7 +32,7 @@ bindkey '\eOF'    end-of-line        # gnome-terminal
 export PATH=$PATH:~/.local/bin/
 export PATH=$PATH:/opt/pylon6/bin/
 export QT_QPA_PLATFORMTHEME=qt5ct
-export EDITOR=micro
+export EDITOR=nano
 
 ex ()
 {
