@@ -11,3 +11,6 @@ plasma
 plasma-browser-integration
 dolphin
 konsole
+python
+python-pip
+python-virtualenv

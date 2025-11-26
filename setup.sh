@@ -25,3 +25,7 @@ git config --global user.mail "ruffino.cyprien@protonmail.com"
 git config --global credential.helper cache
 
 echo "Setup complete, reboot recommended and remember to sync extensions/tweaks"
+
+python -m venv ~/.default
+source ~/.default/bin/activate
+pip install -r requirements.txt
