@@ -29,3 +29,4 @@ echo "Setup complete, reboot recommended and remember to sync extensions/tweaks"
 python -m venv ~/.default
 source ~/.default/bin/activate
 pip install -r requirements.txt
+llm install llm-anthropic
