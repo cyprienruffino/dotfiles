@@ -4,11 +4,17 @@ mkdir -p ~/.config_backups
 cp ~/.zshrc ~/.config_backups/
 cp .zshrc ~/.zshrc
 
+cp .tmux.conf ~/
+
 cp ~/.gitconfig ~/.config_backups/
 cp .gitconfig ~/.gitconfig
 
 mkdir -p ~/.local/
 cp -r bin res ~/.local/
+mkdir -p ~/.config/kitty
+cp quick-access-terminal.conf ~/.config/kitty/
+cp kitty.conf ~/.config/kitty/
+cp .tmux.conf ~/
 
 sudo cp -r icons /usr/share/
 sudo cp -r themes /usr/share/
