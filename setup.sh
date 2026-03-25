@@ -2,19 +2,17 @@ usermod --shell /usr/bin/zsh cyprien
 mkdir -p ~/.config_backups
 
 cp ~/.zshrc ~/.config_backups/
-cp .zshrc ~/.zshrc
-
-cp .tmux.conf ~/
+cp config/.zshrc ~/.zshrc
 
 cp ~/.gitconfig ~/.config_backups/
-cp .gitconfig ~/.gitconfig
+cp config/.gitconfig ~/.gitconfig
 
 mkdir -p ~/.local/
 cp -r bin res ~/.local/
 mkdir -p ~/.config/kitty
-cp quick-access-terminal.conf ~/.config/kitty/
-cp kitty.conf ~/.config/kitty/
-cp .tmux.conf ~/
+cp config/quick-access-terminal.conf ~/.config/kitty/
+cp config/kitty.conf ~/.config/kitty/
+cp config/.tmux.conf ~/
 
 sudo cp -r icons /usr/share/
 sudo cp -r themes /usr/share/
